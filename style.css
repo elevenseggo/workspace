@@ -1,0 +1,338 @@
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* header part */
+.mainheader {
+    display: flex;
+    position: relative;
+    background: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg) no-repeat;
+    z-index: 1;
+}
+.mainheader::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 1;
+}
+.banner {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+.h1main {
+    position: relative;
+    font-weight: 700;
+    padding: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    width: 700px;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+.banner__header {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 180px;
+}
+.banner__navigation {
+    font-size: 13px;
+    word-spacing: 35px;
+}
+li {
+    list-style: none;
+    display: inline;
+    
+}
+a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+    text-transform: uppercase;
+}
+/* main part */
+main {
+    margin-bottom: 65px;
+    background-color: white;
+}
+.sections {
+    display: flex;
+    margin: auto;
+    margin-top: 0px;
+    width: 1170px;
+}
+.articles {
+    width: 780px;
+    background: white;
+}
+/* last-post part */
+.last-post {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 60px;
+}
+.last-post-img {
+    width: 380px;
+}
+.last-post-container {
+    margin-left: 30px;
+    text-align: left;
+}
+.last-post-tags {
+    padding-left: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #b59f5b;
+    word-spacing: 20px;
+}
+.articles_h2 {
+    color: #000000;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.details {  
+    font-weight: normal;
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 40px; 
+}
+.last-post-details {
+    display: inline; 
+    margin-right: 15px;
+}
+.last-post-details:nth-child(even) {
+    font-weight: 700;
+    color:#000;
+}
+.last-post-text {
+    font-size: 15px;
+    line-height: 22px;
+}
+p
+{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.aside-section {
+    margin-left: 120px;
+}
+.aside-block {
+    width: 270px;
+}
+.block-newposts {
+    margin-top: 50px;
+}
+.block-email {
+    margin-top: 60px;
+}
+.block-tags {
+    margin-top: 60px;
+}
+.block-themes {
+    margin-top: 60px;
+}
+.themes-bar {
+    padding-left: 0px;
+    color: #000;
+    text-transform: none;
+}
+.aside-h3 {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.aside-h3::after {
+    content: " ";
+    top: 100%;
+    margin-top: 15px;
+    background-color: #e1d9bd;
+    width: 66px;
+    height: 3px;
+    position: absolute;
+}
+.aside-article {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 22px;
+    position: relative;
+}
+.aside-post-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 18px;
+}
+.aside-container {
+    width: 200px;
+    right: 0;
+    text-align: left;
+}
+.aside-post-details {
+    font-size: 12px;
+    color: #888888;
+}
+.aside-h4 {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 3px;
+    line-height: 18px;
+}
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.field {
+    font-family: inherit;
+    border: none;
+    width: 220px;
+    height: 55px;
+    padding: 15px;
+    background-color: #f4f7f6;
+}
+.button {
+    border: none;
+    width: 55px;
+    height: 55px;
+    background-color: #b59f5b;
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+.field:focus, .emailfield:focus {
+    outline: none;
+    border: none;
+}
+.emailbar {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.emailfield {
+    font-family: inherit;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #f4f7f6;
+    margin-bottom: 20px;
+}
+.emailbtn {
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    font-family: inherit;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #b59f5b;
+}
+.tagsbar {
+    padding: 0;
+    color: #000;
+}
+.tagbtn {
+    display: inline-block;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 3px solid #eeeeee;
+    padding: 5px 10px;
+    margin-bottom: 6px;
+}
+.themes {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+sup {
+    color: #b59f5b;
+}
+/* footer part */
+.footer-line {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 1170px;
+    margin-bottom: 75px;
+    background-color: #f4f7f6;
+}
+.socials__logo {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+.footer-li {
+    margin: 0;
+    padding: 0;
+}
+.copyright-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* cursor */
+a, .emailbtn, .button, .tagbtn, .themes, .logo, .last-post, .aside-container {
+  cursor: pointer;
+}
+.field, .emailfield {
+  cursor: text;
+}
